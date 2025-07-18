@@ -1,6 +1,6 @@
 ---
 
-# 🧑‍🏫 Tutorial: Give `newuser` SSH Access to Your Ubuntu Server Using PuTTY & Ed25519
+# 🧑‍🏫 Tutorial: Give `[username]` SSH Access to Your Ubuntu Server Using PuTTY
 
 ---
 
@@ -30,20 +30,20 @@
 
 ### Step 4: Create the New User  
 Run:  
-`adduser newuser`
+`adduser [username]`
 
 ### Step 5: Configure SSH Key Access  
 1. Create the `.ssh` directory:  
-   `mkdir /home/newuser/.ssh`
+   `mkdir /home/[username]/.ssh`
 
 2. Add the public key:  
-   `nano /home/newuser/.ssh/authorized_keys`  
+   `nano /home/[username]/.ssh/authorized_keys`  
    - Paste the key **from PuTTYgen’s top box**, starting with `ssh-ed25519`.
 
 3. Set permissions:  
-   `chmod 700 /home/newuser/.ssh`  
-   `chmod 600 /home/newuser/.ssh/authorized_keys`  
-   `chown -R newuser:newuser /home/newuser/.ssh`
+   `chmod 700 /home/[username]/.ssh`  
+   `chmod 600 /home/[username]/.ssh/authorized_keys`  
+   `chown -R [username]:[username] /home/[username]/.ssh`
 
 ### Step 6: Make Sure SSH Is Ready  
 If using a custom port (e.g. `22`):  
@@ -65,12 +65,12 @@ If using a custom port (e.g. `22`):
 
 ### Step 9: Set Username  
 - Go to: `Connection → Data → Auto-login username`  
-- Set it to: `newuser`
+- Set it to: `[username]`
 
 ### Step 10: Connect!  
 - Click **Open**  
 - Accept the server fingerprint if prompted  
-- If the key is accepted and setup is correct — ✅ `newuser` is logged in!
+- If the key is accepted and setup is correct — ✅ `[username]` is logged in!
 
 ---
 
