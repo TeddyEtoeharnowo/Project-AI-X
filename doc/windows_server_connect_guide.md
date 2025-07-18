@@ -1,6 +1,6 @@
 ---
 
-# 🧑‍🏫 Tutorial: Give `[username]` SSH Access to Your Ubuntu Server Using PuTTY & Ed25519
+# 🧑‍🏫 Tutorial: Give `[username]` SSH Access to Your Ubuntu Server Using PuTTY
 
 ---
 
