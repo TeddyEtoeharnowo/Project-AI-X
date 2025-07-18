@@ -1,6 +1,6 @@
 ---
 
-# 🧑‍🏫 Tutorial: Give `[username]` SSH Access to Your Ubuntu Server Using PuTTY
+# 🧑‍🏫 Tutorial: Give `[username]` SSH Access to Your Ubuntu Server Using PuTTY & Ed25519
 
 ---
 
@@ -74,7 +74,30 @@ If using a custom port (e.g. `22`):
 
 ---
 
-**ℹ️ After logging in for the first time, you should change your password on the server (the server admin set one for you):**  
-Run:  
-`passwd`
+## 🔒 Important Security Reminders
+
+- **Change your password after first login:**  
+  The server admin set an initial password for you. Change it by running:  
+  `passwd`
+  
+- **Never connect to the server on unsecured WiFi!**  
+  Only use trusted, password-protected networks. Public or open WiFi can expose your connection to attackers. Use a VPN if you have to.
+
+- **Never share your private key (`.ppk` file) or your password with anyone.**  
+  Only share your public key if needed.
+
+- **Keep your private key safe:**  
+  Store it in a secure location on your computer. If someone else gets your private key, they can access your account.
+
+- **Use a strong passphrase for your private key if possible.**  
+  This adds an extra layer of protection.
+
+- **Be careful with copy-pasting commands:**  
+  Only run commands you understand or that are from trusted sources.
+
+- **Log out when you’re done:**  
+  Always close your SSH session when you’re finished.
+
+- **If you think your account or key is compromised, tell your admin immediately.**
+
 ---
