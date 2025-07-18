@@ -16,6 +16,7 @@ A running summary of setup and hardening steps completed.
 -   Allowed SSH on custom port
 -   Confirmed UFW status and active rules
 -   Changed SSH port
+-   Registered and configured a private DuckDNS domain (details withheld)
 
 ## SSH Key Authentication
 
