@@ -37,3 +37,8 @@ A running summary of setup and hardening steps completed.
 
 -   Installed latest driver using 'sudo apt install nvidia-driver-xxx'
 -   Rebooted and verified with 'nvidia-smi'
+
+## Wi-Fi PCIe Integration
+-   Installed PCIe Wi-Fi card
+-   Confirmed persistent connectivity using Netplan configuration
+-   Verified public IP and enabled SSH access over Wi-Fi
